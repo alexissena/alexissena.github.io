@@ -15,7 +15,7 @@ jugar.addEventListener("click",function(){
         setTimeout(() => {
            
             intentos ++;
-            $("#dado"+intentos).attr('src', "img/"+resultado+".jpeg");
+            $("#dado"+intentos).attr('src', "assets/img/"+resultado+".jpeg");
             $("#intento"+ intentos).text(intentos);
             $("#valor"+ intentos).text(resultado);
             let puntaje =document.getElementById("puntaje"+intentos);
