@@ -1,162 +1,216 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+/* FontAwesome for working BootSnippet :> */
 
-body {
-    font-family: 'Montserrat', sans-serif;
-    background-color:  #c2c2c4;
-
-}
-H1{
-    text-align: center;
-    color: rgb(199, 15, 70);
-    font-family: "Raleway", sans-serif;
-    background-color: #929090;
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+#team {
+  background: #eee !important;
 }
 
-/* Category Ads */
-#jugar{
-    background-color: rgb(199, 15, 70);
-    color: #fff;
-    font-family: "Raleway", sans-serif;
-    font-size: 1.2em;
-    margin: auto;
-    width: 70%;
-    border: 2px solid #fd0054;
-    
-}
-#jugar:hover{
-    background-color: #daa9b5;
-    color:#000;
-}
-
-#resetear{
-    background-color: rgb(199, 15, 70);
-    color: #fff;
-    font-family: "Raleway", sans-serif;
-    font-size: 1.2em;
-    margin: auto;
-    width: 70%;
-    border: 2px solid #fd0054; 
-}
-#resetear:hover{
-    background-color: #daa9b5;
-    color:#000;
-}
-#ads {
-    margin: 30px 0 30px 0;
-   
-}
-
-#ads .card-notify-badge {
-        position: absolute;
-        left: -10px;
-        top: -20px;
-        background: rgb(224, 215, 217);
-        text-align: center;
-        border-radius: 30px 30px 30px 30px; 
-        color: #000;
-        padding: 5px 10px;
-        font-size: 14px;
-
-    }
-
-#ads .card-notify-year {
-        position: absolute;
-        right: -10px;
-        top: -20px;
-        background:  rgb(199, 15, 70);
-        border-radius: 50%;
-        text-align: center;
-        color: #fff;      
-        font-size: 14px;      
-        width: 50px;
-        height: 50px;    
-        padding: 15px 0 0 0;
-}
-
-
-#ads .card-detail-badge {      
-        background: #f2d900;
-        text-align: center;
-        border-radius: 30px 30px 30px 30px;
-        color: #000;
-        padding: 5px 10px;
-        font-size: 14px;        
-    }
-
-   
-
-#ads .card:hover {
-            background: #fff;
-            box-shadow: 12px 15px 20px 0px rgba(46,61,73,0.15);
-            border-radius: 4px;
-            transition: all 0.3s ease;
-        }
-
-#ads .card-image-overlay {
-        font-size: 20px;
-        
-    }
-
-
-#ads .card-image-overlay span {
-            display: inline-block;              
-        }
-
-
-#ads .ad-btn {
-        text-transform: uppercase;
-        width: 150px;
-        height: 40px;
-        border-radius: 80px;
-        font-size: 16px;
-        line-height: 35px;
-        text-align: center;
-        border: 3px solid #e6de08;
-        display: block;
-        text-decoration: none;
-        margin: 20px auto 1px auto;
-        color: #000;
-        overflow: hidden;        
-        position: relative;
-        background-color: #e6de08;
-    }
-
-#ads .ad-btn:hover {
-            background-color: #e6de08;
-            color: #1e1717;
-            border: 2px solid #e6de08;
-            background: transparent;
-            transition: all 0.3s ease;
-            box-shadow: 12px 15px 20px 0px rgba(46,61,73,0.15);
-        }
-
-#ads .ad-title h5 {
-        text-transform: uppercase;
-        font-size: 18px;
-    }
-    .tabla1,
-tr,
-th,
-td {
-  color: #050d18;
-  border: 2px solid rgb(199, 15, 70);
-  border-collapse: collapse;
+h2 {
   text-align: center;
+  color: rgb(253, 111, 9);
 }
-.tabla1 {
-  width: 80%;
-  margin: auto;
+body {
+  background-color: white;
 }
-.title{
-    background-color: #daa9b5;
+.btn-primary:hover {
+  background-color: #f36a2a;
+  border-color: #ff5100;
 }
-.total{
-    font-family: "Raleway", sans-serif;
-    color:#050d18;
-    font-size: 18px;
-    
-    
+.btn-primary:focus {
+  background-color: rgba(250, 117, 28, 0.993);
+  border-color: rgb(253, 111, 9);
+  box-shadow: none;
+  outline: none;
+}
 
+.btn-primary {
+  color: #fff;
+  background-color: rgb(243, 128, 46);
+  border-color: rgb(243, 101, 0);
 }
-    
+
+section {
+  padding: 60px 0;
+}
+
+section .section-title {
+  text-align: center;
+  color: rgb(253, 111, 9);
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+
+#team .card {
+  border: none;
+  background: #ffffff;
+}
+
+.image-flip:hover .backside,
+.image-flip.hover .backside {
+  -webkit-transform: rotateY(0deg);
+  -moz-transform: rotateY(0deg);
+  -o-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  border-radius: 0.25rem;
+}
+
+.image-flip:hover .frontside,
+.image-flip.hover .frontside {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.mainflip {
+  -webkit-transition: 1s;
+  -webkit-transform-style: preserve-3d;
+  -ms-transition: 1s;
+  -moz-transition: 1s;
+  -moz-transform: perspective(1000px);
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transition: 1s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.frontside {
+  position: relative;
+  -webkit-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  z-index: 2;
+  margin-bottom: 30px;
+}
+
+.backside {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: white;
+  -webkit-transform: rotateY(-180deg);
+  -moz-transform: rotateY(-180deg);
+  -o-transform: rotateY(-180deg);
+  -ms-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+  -webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+  -moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+  box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+}
+
+.frontside,
+.backside {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: 1s;
+  -webkit-transform-style: preserve-3d;
+  -moz-transition: 1s;
+  -moz-transform-style: preserve-3d;
+  -o-transition: 1s;
+  -o-transform-style: preserve-3d;
+  -ms-transition: 1s;
+  -ms-transform-style: preserve-3d;
+  transition: 1s;
+  transform-style: preserve-3d;
+}
+
+.frontside .card,
+.backside .card {
+  min-height: 312px;
+}
+
+.backside .card a {
+  font-size: 18px;
+  color: rgb(253, 111, 9) !important;
+}
+
+.frontside .card .card-title,
+.backside .card .card-title {
+  color: #ff5100 !important;
+}
+
+.frontside .card .card-body img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+.btn-success {
+  color: #fff;
+  background-color: rgb(243, 128, 46);
+  border-color: rgb(243, 101, 0);
+}
+
+.select2-container--default
+  .select2-results_option--highlighted.select2-results_option--selectable {
+  background-color: #f09124;
+  color: white;
+}
+#verDatos:hover {
+  background-color: #f09124;
+}
+#verDatos:active {
+  background-color: rgb(255, 115, 0);
+  border-color: #ff5100;
+}
+#verDatos a:active {
+  background-color: rgb(255, 115, 0);
+  border-color: #ff5100;
+}
+
+#resetear {
+  background-color: #f09124;
+}
+#resetear:active {
+  background-color: rgb(255, 115, 0);
+  border-color: #ff5100;
+}
+#resetear a:active {
+  background-color: rgb(255, 115, 0);
+  border-color: #ff5100;
+}
+.btn-reset {
+  color: #fff;
+  background-color: rgb(243, 128, 46);
+  border-color: rgb(243, 101, 0);
+  display: block;
+  width: 100%;
+}
+
+.bootstrap-table .fixed-table-container .table thead th .th-inner {
+  padding: 0.75rem;
+  vertical-align: bottom;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  background-color: rgb(224, 172, 142);
+}
+#tblResultados thead tr th {
+  border: black 5px solid;
+}
+tbody,tr, th, td{
+  border: rgb(255, 141, 35) 2px solid !important;
+}
+.male{
+    background-color: rgb(156, 214, 156);
+}
+.female {
+  background-color: #f88d8a;
+}
+.male {
+  border: 5px green solid;
+}
+.female {
+  border: 5px red solid;
+}
+.radius{
+  border-radius: 50%;
+}
+#tblResultados tr:nth-child(even){
+  background-color: bisque;
+}
+#tblResultados tr:nth-child(odd) {
+  background-color: rgb(248, 248, 248);
+}

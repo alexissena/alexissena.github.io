@@ -4,100 +4,94 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Evaluacion continua semana 2</title>
+        <title>Evalucion Continua 2</title>
+
         <link
             href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
             rel="stylesheet" id="bootstrap-css">
-        <link rel="stylesheet" href="assets/css/style.css">
+            <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.20.2/dist/bootstrap-table.min.css">
+            <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+            <script src="https://kit.fontawesome.com/0d5b745540.js" crossorigin="anonymous"></script>
+            <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <br>
-        <h1>BIENVENIDOS AL JUEGO DEL DADO</h1>
-        <br>
-        <a href="#" id="jugar" class="btn btn-block btn-success"><span class="glyphicon glyphicon-tower"></span> Jugar</a>
-        <p></p>
-        <a href="#" id="resetear" class="btn btn-block btn-warning"><span class="glyphicon glyphicon-refresh"></span> Resetear</a>
-        <br>
-        
-        <br>
-        <div class="container" id="container" style="display: none;">
-            <div class="row" id="ads">
-                <div class="col-md-4">
-                    <div class="card rounded">
-                        <div class="card-image">
-                            <span class="card-notify-badge" id="intento1"></span>
-                            <span class="card-notify-year" id="valor1"></span>
-                            <img class="img-fluid" id="dado1"
-                                src="assets/img/blanco.jpeg"
-                                alt="Alternate Text" />
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card rounded">
-                        <div class="card-image">
-                            <span class="card-notify-badge" id="intento2"></span>
-                            <span class="card-notify-year" id="valor2"></span>
-                            <img class="img-fluid" id="dado2"
-                                src="assets/img/blanco.jpeg"
-                                alt="Alternate Text" />
-                        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="jumbotron">
+                        
+                        <p>
+                           <h2>Esta pagina muestra datos de usuarios en una tabla, y visualiza su información </h2>
+                        </p>
                         
                     </div>
                 </div>
-
-                <div class="col-md-4">
-                    <div class="card rounded">
-                        <div class="card-image">
-                            <span class="card-notify-badge" id="intento3"></span>
-                            <span class="card-notify-year" id="valor3"></span>
-                            <img class="img-fluid" id="dado3"
-                                src="assets/img/blanco.jpeg"
-                                alt="Alternate Text" />
-                        </div>
-                        
-                    </div>
-                </div>
-
             </div>
+            <div class="row">
+                <div class="col-md-6">
+
+                    <button id="buscar" type="button" class="btn btn-block btn-primary">
+                        Mostrar Datos
+                    </button>
+                    <br><br>
+                </div>
+                
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <table id="tblResultados">
+                        <thead>
+                            <tr>
+                              <th data-field="name" data-formatter="nameFormatter">Nombres</th>
+                              <th data-field="nat">Nacionalidad</th>
+                              <th data-field="email">Email</th>
+                              <th data-field="gender">Genero</th>
+                              <th data-field="cell">Telefono</th>
+                              
+                            </tr>
+                          </thead>
+                    </table>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                </div>
+                <div class="col-md-4">
+                    <br><br>
+
+                    <button id="verDatos" type="button" class="btn btn-success btn-block">
+                        Ver Datos
+                    </button>
+
+                    <br>
+
+                    <button id="resetear" type="button" class="btn btn-reset">
+                        Reset
+                    </button>
+                </div>
+            </div>
+            <br><br>
+            <section id="team" class="pb-5">
+                <div class="container">
+                    <h5 class="section-title h1">OUR TEAM</h5>
+                    <div id="teams" class="row">
+                        <!-- Team member -->
+                        
+                    </div>
+                </div>
+            </section>
         </div>
-        <table class="tabla1">
-            <tr class="title">
-                <th>Intentos</th>
-                <th>Puntaje</th>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td id="puntaje1"></td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td id="puntaje2"></td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td id="puntaje3"></td>
-            </tr>
-            <tr class="total">
-                <td>Total</td>
-                <td id="total"></td>
-            </tr>
-        </table>
-       
 
-        <div id="exampleModal" class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-sm">
-              <div class="modal-content">
-                <img src="assets/img/girando.gif">
-              </div>
-            </div>
-          </div>
+
+
+
 
         <script
             src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script
             src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-            <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-            <script src="assets/js/script.js"></script>
+        <script src="https://unpkg.com/bootstrap-table@1.20.2/dist/bootstrap-table.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+        <script src="js/script.js"></script>
     </body>
 </html>
